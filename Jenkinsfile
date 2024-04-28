@@ -4,7 +4,6 @@ pipeline{
     stages{
         stage("Sonar Quality Check"){
             agent {
-                 ### to use different versions of build environments (like java 8,java11, java 17 )we need to use docker images
                 docker {
                     image 'openjdk:11'
                 }
